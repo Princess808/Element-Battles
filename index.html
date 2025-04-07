@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Battle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <h1>⚡ Element Battle ⚡</h1>
+        
+        <div class="battle-area">
+            <div class="player" id="player">
+                <div class="element-emoji">🔥</div>
+                <div class="health-bar">
+                    <div class="health-fill" id="player-health"></div>
+                </div>
+                <div class="name">Player</div>
+            </div>
+            
+            <div class="vs">VS</div>
+            
+            <div class="enemy" id="enemy">
+                <div class="element-emoji">💧</div>
+                <div class="health-bar">
+                    <div class="health-fill" id="enemy-health"></div>
+                </div>
+                <div class="name">Enemy</div>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <button class="btn" id="attack-btn">Attack</button>
+            <button class="btn" id="special-btn">Special</button>
+            <button class="btn" id="heal-btn">Heal</button>
+            <button class="btn" id="new-game-btn">New Game</button>
+        </div>
+        
+        <div class="message-log" id="message-log"></div>
+        
+        <div class="element-selection">
+            <h3>Choose Your Element:</h3>
+            <div class="elements">
+                <button class="element-btn" data-element="fire">🔥 Fire</button>
+                <button class="element-btn" data-element="water">💧 Water</button>
+                <button class="element-btn" data-element="earth">🌍 Earth</button>
+                <button class="element-btn" data-element="air">🌪️ Air</button>
+                <button class="element-btn" data-element="lightning">⚡ Lightning</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
